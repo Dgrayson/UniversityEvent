@@ -1,10 +1,20 @@
+<?php
+	require_once('base.php');
+
+	if(session_status() == PHP_SESSION_NONE){
+		session_start(); 
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	
 	<h1>Welcome Back</h1>
 
 	<br />
@@ -14,12 +24,15 @@
 	<br />
 	<br />
 
-	<a href="#">Create University</a><br /><br />
+	<ul class="navbar">
+	<li><a href="UniversityForm.php">Create University</a><br /><br /></li>
 
-	<a href="#">Edit University</a><br /><br />
+	<li><a href="SelectUniversity.php">Edit University</a><br /><br /></li>
 
-	<a href="#">Delete University</a><br /><br />
+	<li><a href="SelDelUni.php">Delete University</a><br /><br /></li>
 	
-	<a href = "login.php">Logout</a>
+	<li><a href = "login.php">Logout</a></li>
+	</ul>
+	<
 </body>
 </html>

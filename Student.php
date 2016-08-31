@@ -1,8 +1,17 @@
+<?php
+	require_once('base.php');
+
+	if(session_status() == PHP_SESSION_NONE){
+		session_start(); 
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -14,12 +23,17 @@
 	<br />
 	<br />
 
-	<a href = "#">View RSO's</a>
+	<ul class="navbar">
+	<li><a href = "ViewRSO.php">View RSO's</a>
 	<br />
 	<br />
-	<a href = "#">View Events</a>
+	<li><a href = "CreateEvent.php">Create Event</a>
 	<br />
 	<br />
-	<a href = "login.php">Logout</a>
+	<li><a href = "viewEvent.php">View Events</a>
+	<br />
+	<br />
+	<li><a href = "login.php">Logout</a>
+	</ul>
 </body>
 </html>

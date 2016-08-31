@@ -1,0 +1,33 @@
+    body {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    background-color: gray 
+}
+
+ul.navbar {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em
+}
+        
+ul.navbar li {
+    background: lightblue;
+    margin: 0.5em;
+    padding: 0.3em;
+    border-right: 1em solid black 
+}
+
+#container {
+    width: 50%;
+    border: 5px solid black;
+    display: inline-block;
+    text-align: center; 
+    background-color:  #d3d3d3;
+}
+
+#map {
+    display: inline-block;
+    text-align: center;
+}
